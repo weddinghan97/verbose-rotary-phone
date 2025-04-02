@@ -5,8 +5,7 @@ export default function handler(req, res) {
     return res.status(400).send("⚠️ لم يتم تمرير معرف الدعوة (id) في الرابط");
   }
 
-  const redirectUrl = `https://script.google.com/macros/s/AKfycbxKAK-jI40llq0u9wPnW6OSPZnmuLAEvw-_S21WcyNdWb_waxgs63ifNFa-0jln8xY6/exec?id=${encodeURIComponent(id)}`;
+  const redirectUrl = `https://script.google.com/macros/s/AKfycbxWo_d5_vB9FcfRnL-IX74MZ5e0ZQouF74EicRwzhqgTjTPgryEvWE9CozjoJ2jE-0G/exec?id=${encodeURIComponent(id)}`;
 
   return res.redirect(302, redirectUrl);
 }
-
