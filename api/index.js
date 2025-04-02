@@ -1,3 +1,4 @@
+export const config = { runtime: 'nodejs' };
 import { google } from 'googleapis';
 import { JWT } from 'google-auth-library';
 
